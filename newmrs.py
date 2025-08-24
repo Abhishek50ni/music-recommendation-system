@@ -14,7 +14,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 # nltk.download('wordnet')
 
 print("Loading Spotify data...")
-df = pd.read_csv("spotify.csv")
+df = pd.read_csv("cleaned_spotify.csv")
 print(f"Data loaded: {df.shape[0]} songs selected.")
 
 # --- NEW CODE STARTS HERE ---
@@ -90,3 +90,4 @@ print("\n--- Testing Search ---")
 print(search_song("broken heart love"))
 # Create a trending songs list (top 20 by popularity)
 trending_songs = get_top_songs(df, n=20).to_dict(orient='records')
+
