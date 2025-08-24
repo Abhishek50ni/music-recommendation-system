@@ -91,3 +91,4 @@ print(search_song("broken heart love"))
 # Create a trending songs list (top 20 by popularity)
 trending_songs = get_top_songs(df, n=20).to_dict(orient='records')
 
+
